@@ -1,3 +1,5 @@
+import { inicializarCarrinho } from "./src/menuCarrinho";
+
 /*
 variável com objeto
 */
@@ -47,7 +49,7 @@ const catalago = [
     marca: 'Zara',
     nome: 'Casaco de Lã com Botões.jpg',
     preco: 170,
-    imagem: 'product-6',
+    imagem: 'product-6.jpg',
     feminino: true,
   },
   { 
@@ -67,17 +69,17 @@ const catalago = [
     feminino: true, 
   }
 ]
-for (const produtoCatalago of catalago) {
-    const cartaoProduto = `<div id="card-produto-1">
-    <img src="./assets/img/${produtoCatalago.imagem}" alt="imagem produto 1" style="width: 200px;">
-    </div>
-    <p>${produtoCatalago.marca}</p>
-    <p>${produtoCatalago.nome}</p>
-    <p>$${produtoCatalago.preco}</p>
-    <button>Adicionar</button>
-    </section>`;
+for (const produtoCatalago of catalago){
 
-    document.getElementById('container-produto').innerHTML += cartaoProduto;
+  const cartaoProduto = `<div class="border-solid border-2 border-indigo-600 w-40 m-2" id="card-produto-${produtoCatalago.id}">
+  <img src="./assets/img/${produtoCatalago.imagem}">
+  <p>${produtoCatalago.marca}</p>
+  <p>${produtoCatalago.nome}</p>
+  <p>$${produtoCatalago.preco}</p>
+  <button>Adicionar</button>
+  </div>`
+
+  document.getElementById('container-produto').innerHTML += cartaoProduto;
 }
-
+inicializarCarrinho()
 
