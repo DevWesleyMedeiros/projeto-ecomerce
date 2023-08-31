@@ -1,3 +1,7 @@
+/*
+variável com objeto
+*/
+
 const catalago = [
   {
     id: 1, 
@@ -63,17 +67,17 @@ const catalago = [
     feminino: true, 
   }
 ]
-for (const produtoCatalago of catalago){
+for (const produtoCatalago of catalago) {
     const cartaoProduto = `<div id="card-produto-1">
-<img src="./assets/img/${produtoCatalago.imagem}" alt="imagem produto 1" style="width: 200px;">
-</div>
-<p>${produtoCatalago.marca}</p>
-<p>${produtoCatalago.nome}</p>
-<p>$${produtoCatalago.preco}</p>
-<button>Adicionar</button>
-</section>`;
+    <img src="./assets/img/${produtoCatalago.imagem}" alt="imagem produto 1" style="width: 200px;">
+    </div>
+    <p>${produtoCatalago.marca}</p>
+    <p>${produtoCatalago.nome}</p>
+    <p>$${produtoCatalago.preco}</p>
+    <button>Adicionar</button>
+    </section>`;
 
-document.getElementById('container-produto').innerHTML += cartaoProduto;
+    document.getElementById('container-produto').innerHTML += cartaoProduto;
 }
 
 
