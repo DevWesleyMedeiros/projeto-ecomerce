@@ -67,7 +67,8 @@ const catalago = [
     preco: 88,
     imagem: 'product-8.jpg',
     feminino: true, 
-  }
+  },
+
 ]
 for (const produtoCatalago of catalago){
 
