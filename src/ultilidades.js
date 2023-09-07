@@ -1,6 +1,3 @@
-/*
-variável com objeto
-*/
 import { renderizarCatalago } from "./cartaoProduto"
 import { inicializarCarrinho } from "./menuCarrinho"
 
@@ -68,8 +65,7 @@ export const catalago = [
       preco: 88,
       imagem: 'product-8.jpg',
       feminino: true, 
-    },
-  
+    }
 ]
-renderizarCatalago()
-inicializarCarrinho()
+renderizarCatalago();
+inicializarCarrinho();
