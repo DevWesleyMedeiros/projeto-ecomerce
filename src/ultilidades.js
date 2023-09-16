@@ -1,5 +1,5 @@
-import { renderizarCatalago } from "./cartaoProduto"
-import { inicializarCarrinho } from "./menuCarrinho"
+import { renderizarCatalago } from "./cartaoProduto";
+import { inicializarCarrinho } from "./menuCarrinho";
 
 
 export const catalago = [
@@ -29,7 +29,7 @@ export const catalago = [
     { 
       id: "4",
       marca: 'Zara',
-      nome: 'Sobretudo em Mescla de Lã',
+      nome: 'Sobretudo em Lã',
       preco: 160,
       imagem: 'product-4.jpg',
       feminino: false,
@@ -66,6 +66,6 @@ export const catalago = [
       imagem: 'product-8.jpg',
       feminino: true, 
     }
-]
+];
 renderizarCatalago();
 inicializarCarrinho();

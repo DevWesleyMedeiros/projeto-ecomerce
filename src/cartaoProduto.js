@@ -8,15 +8,15 @@ export function renderizarCatalago(){
       <p class="text-slate-sm">${produtoCatalago.marca}</p>
       <p class="text-slate-sm">${produtoCatalago.nome}</p>
       <p class="text-slate-sm bg-slate-950>$${produtoCatalago.preco}"</p>
-      <button id="adicionar-${produtoCatalago.id}" class="bg-slate-950 text-slate-200 hover:bg-slate-700"><i class="fa-solid fa-cart-plus"></i></button>
+      <button id="adicionar-${produtoCatalago.id}" class=" w-full bg-slate-950 text-slate-200 hover:bg-slate-700"><i class="fa-solid fa-cart-plus"></i></button>
     </div>`
     
     document.getElementById('container-produto').innerHTML += cartaoProduto;
-  }
+  };
 
   for(const produtoCatalago of catalago){
-    document.getElementById(`adicionar-${produtoCatalago.id}`).addEventListener('click', () => adicionarProdutoCarrinho(produtoCatalago.id))
+    document.getElementById(`adicionar-${produtoCatalago.id}`).addEventListener('click', () => adicionarProdutoCarrinho(produtoCatalago.id));
   }
-}
+};
 
 
